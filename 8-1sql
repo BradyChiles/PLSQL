@@ -1,0 +1,8 @@
+SELECT object_name, status, timestamp
+  FROM user_objects
+    WHERE object_type = 'PROCEDURE';
+    
+SELECT name, type
+  FROM user_dependencies
+    WHERE referenced_name = 'BB_BASKET';
+

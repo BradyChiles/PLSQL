@@ -1,0 +1,6 @@
+DECLARE
+  lv_tax_num NUMBER(5,2);
+BEGIN
+  tax_cost_sp('VA', 100, lv_tax_num);
+  DBMS_OUTPUT.PUT_LINE(lv_tax_num);
+END;

@@ -1,0 +1,3 @@
+SELECT dollar_fmt_sf(shipping), dollar_fmt_sf(total)
+  FROM bb_basket
+    WHERE idbasket = 3;

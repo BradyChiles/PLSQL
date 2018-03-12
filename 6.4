@@ -1,0 +1,6 @@
+SELECT idbasket, day_ord_sf(dtcreated) "Date Created"
+  FROM bb_basket;
+ 
+SELECT day_ord_sf(dtcreated) "Weekday", COUNT(day_ord_sf(dtcreated)) "Count"
+  FROM bb_basket
+    GROUP BY day_ord_sf(dtcreated);

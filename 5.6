@@ -1,0 +1,8 @@
+DECLARE
+  lv_status_var VARCHAR2(20);
+BEGIN
+  status_sp(4, lv_status_var);
+  DBMS_OUTPUT.PUT_LINE(lv_status_var);
+  status_sp(6, lv_status_var);
+  DBMS_OUTPUT.PUT_LINE(lv_status_var);
+END;
